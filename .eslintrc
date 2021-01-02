@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "airbnb-typescript"
+    ],
+    "rules": {
+        "linebreak-style": 0,
+        "react/jsx-props-no-spreading": "off",
+        "react/react-in-jsx-scope": "off"
+    },
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    }
+}
