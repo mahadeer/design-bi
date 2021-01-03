@@ -1,0 +1,70 @@
+.app-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50px 30px 1fr 30px 40px;
+	gap: 0px 0px;
+	grid-template-areas:
+		'nav-bar'
+		'menu-bar'
+		'design-area'
+		'status-bar'
+		'footer-area';
+}
+
+.nav-bar {
+	grid-area: nav-bar;
+}
+.menu-bar {
+	grid-area: menu-bar;
+}
+.design-area {
+	grid-area: design-area;
+}
+.status-bar {
+	grid-area: status-bar;
+}
+.footer-area {
+	grid-area: footer-area;
+}
+
+.filter-area {
+	grid-area: filter-area;
+}
+
+.report-area {
+	grid-area: report-area;
+}
+
+.settings-area {
+	grid-area: settings-area;
+}
+
+.tab-bar {
+	grid-area: tab-bar;
+}
+
+.design-area {
+	display: grid;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+}
+
+.design-area.filter-on.settings-on {
+	grid-template-columns: 240px 1fr 260px 60px;
+	grid-template-areas: 'filter-area report-area settings-area tab-bar';
+}
+
+.design-area.filter-off.settings-on {
+	grid-template-columns: 40px 1fr 260px 60px;
+	grid-template-areas: 'filter-bar report-area settings-area tab-bar';
+}
+
+.design-area.filter-off.settings-off {
+	grid-template-columns: 40px 1fr 60px;
+	grid-template-areas: 'filter-bar report-area tab-bar';
+}
+
+.design-area.filter-on.settings-off {
+	grid-template-columns: 240px 1fr 60px;
+	grid-template-areas: 'filter-area report-area tab-bar';
+}

@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }: any) {
     <>
       <Head>
         <title>design-bi - Create Report quickly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
     </>

@@ -1,7 +1,7 @@
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
-import TableMessage from '../components/TableMessage';
+import ResolutionMessage from '../components/ResolutionMessage';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -18,7 +18,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <div className="h-screen laptop:hidden block">
-            <TableMessage />
+            <ResolutionMessage />
           </div>
           <NextScript />
         </body>
