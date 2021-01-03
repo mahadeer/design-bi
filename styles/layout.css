@@ -1,27 +1,19 @@
 .app-container {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 50px 30px 1fr 30px 40px;
+	grid-template-rows: 25px 1fr 40px;
 	gap: 0px 0px;
 	grid-template-areas:
-		'nav-bar'
 		'menu-bar'
 		'design-area'
-		'status-bar'
 		'footer-area';
 }
 
-.nav-bar {
-	grid-area: nav-bar;
-}
 .menu-bar {
 	grid-area: menu-bar;
 }
 .design-area {
 	grid-area: design-area;
-}
-.status-bar {
-	grid-area: status-bar;
 }
 .footer-area {
 	grid-area: footer-area;

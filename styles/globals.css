@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 @import url('./layout.css');
+
+.menu-bar {
+	cursor: default;
+}
+
+.logo {
+	width: 20px;
+	height: 20px;
+}
