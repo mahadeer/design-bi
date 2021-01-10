@@ -1,13 +1,18 @@
+import { MenuOptions, IMenuOption } from './Utils/MenuRegister';
+import MenuDropdown from './Helpers/MenuDropdown';
+
 export default function MenuBar() {
   return (
-    <div className="menu-bar bg-gray-800 flex flex-row text-sm text-white items-center">
+    <div className="menu-bar bg-gray-100 border-b border-gray-400 flex flex-row text-sm text-black items-center">
       <div className="menu-item px-3">
         <img className="logo" alt="ICON" src="../favicon.ico" />
       </div>
-      <div className="menu-item hover:bg-gray-700 px-3">File</div>
-      <div className="menu-item hover:bg-gray-700 px-3">Edit</div>
-      <div className="menu-item hover:bg-gray-700 px-3">Export</div>
-      <div className="menu-item hover:bg-gray-700 px-3">About</div>
+      {MenuOptions.map((mO: IMenuOption) => (
+        <div key={mO.menuKey} className="menu-item hover:bg-gray-200 px-3">
+          {mO.label}
+          <MenuDropdown isOpen={mO.menuKey === 'file'} options={mO.children} />
+        </div>
+      ))}
     </div>
   );
 }

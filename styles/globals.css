@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('./layout.css');
+@import url('./menubar.css');
 
 .menu-bar {
 	cursor: default;
@@ -11,4 +12,40 @@
 .logo {
 	width: 20px;
 	height: 20px;
+}
+
+.filter-on .filter-bar {
+	display: none;
+}
+
+.filter-off .filter-area {
+	display: none;
+}
+
+.settings-off .settings-area {
+	display: none;
+}
+
+.filter-bar {
+	display: grid;
+	grid-template-rows: 50px 1fr;
+}
+
+.filter-bar .filter-icon {
+	text-align: center;
+	align-self: center;
+}
+
+.filter-bar .filter-text {
+	writing-mode: vertical-rl;
+	text-align: left;
+	justify-self: center;
+}
+
+.tab-names .tab-content {
+	min-height: 72px;
+}
+
+.tab-content {
+	grid-template-rows: 50px 1fr;
 }

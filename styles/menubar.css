@@ -1,0 +1,18 @@
+.menu {
+	position: fixed;
+	width: 150px;
+	border-top: none;
+	display: none;
+}
+
+.menu.open {
+	display: block;
+}
+
+.menu li.menu-sub-item {
+	padding: 5px 20px;
+}
+
+.menu li.seperator {
+	padding: 0px;
+}
