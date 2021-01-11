@@ -10,7 +10,7 @@ export default function MenuBar() {
       {MenuOptions.map((mO: IMenuOption) => (
         <div key={mO.menuKey} className="menu-item hover:bg-gray-200 px-3">
           {mO.label}
-          <MenuDropdown isOpen={mO.menuKey === 'file'} options={mO.children} />
+          <MenuDropdown isOpen={mO.menuKey === ''} options={mO.children} />
         </div>
       ))}
     </div>

@@ -34,6 +34,7 @@
 .filter-bar .filter-icon {
 	text-align: center;
 	align-self: center;
+	cursor: pointer;
 }
 
 .filter-bar .filter-text {
