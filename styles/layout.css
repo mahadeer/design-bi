@@ -1,4 +1,17 @@
-.app-container {
+.design-bi-banner {
+	grid-area: design-bi-banner;
+}
+.landing-actions {
+	grid-area: landing-actions;
+}
+.service-message {
+	grid-area: service-message;
+}
+.footer {
+	grid-area: footer;
+}
+
+.design-container {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 25px 1fr 40px;

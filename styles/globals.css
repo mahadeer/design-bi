@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+@import url('../node_modules/react-resizable/css/styles.css');
+@import url('../node_modules/react-grid-layout/css/styles.css');
+
 @import url('./layout.css');
 @import url('./menubar.css');
+@import url('./grid.css');
+@import url('./semantics.css');
+
+/* Pages */
+@import url('./landing.css');
+@import url('./createReport.css');
 
 .menu-bar {
 	cursor: default;

@@ -1,0 +1,32 @@
+.landing-page {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 312px 1fr 80px 1fr 60px 0.5fr 40px;
+	gap: 0px 0px;
+	grid-template-areas:
+		'.'
+		'design-bi-banner'
+		'.'
+		'landing-actions'
+		'.'
+		'service-message'
+		'.'
+		'footer-area';
+}
+
+.landing-actions {
+	display: grid;
+	grid-template-rows: 1fr 50px 1fr;
+	grid-template-columns: 1fr 220px 50px 220px 1fr;
+	grid-template-areas:
+		'. . . . .'
+		'. create-report . load-report .'
+		'. . . . .';
+}
+
+.create-report {
+	grid-area: create-report;
+}
+.load-report {
+	grid-area: load-report;
+}

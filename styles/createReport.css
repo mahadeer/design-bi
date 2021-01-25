@@ -1,0 +1,31 @@
+.create-report-page {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 40px 120px 1fr 80px 40px;
+	gap: 0px 0px;
+	grid-template-areas:
+		'nav-bar-area'
+		'wizard-area'
+		'form-area'
+		'action-area'
+		'footer-area';
+}
+
+.nav-bar-area {
+  grid-area: nav-bar-area;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+
+}
+
+.wizard-area {
+	grid-area: wizard-area;
+}
+
+.form-area {
+	grid-area: form-area;
+}
+
+.action-area {
+	grid-area: action-area;
+}

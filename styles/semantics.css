@@ -1,0 +1,69 @@
+.button {
+	@apply text-base font-medium p-3 text-center;
+}
+
+.button-primary {
+	@apply bg-primary text-black;
+}
+
+.button-primary:hover {
+	@apply bg-primary-hover text-black;
+}
+
+.button-secondary {
+	@apply bg-secondary text-white;
+}
+
+.button-secondary:hover {
+	@apply bg-secondary-hover text-white;
+}
+
+.button-info {
+	@apply bg-info text-white font-bold;
+}
+
+.wizard-area .wizard-row {
+	@apply flex items-center;
+}
+
+.wizard-row .wizard-group {
+	@apply flex items-center relative text-gray-500;
+}
+
+.wizard-group .wizard-icon {
+	@apply rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-gray-300;
+}
+
+.wizard-group .wizard-icon svg {
+	width: 100%;
+	height: 100%;
+}
+
+.wizard-group .wizard-text {
+	@apply absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-gray-600;
+}
+
+.wizard-trail {
+	@apply flex-auto border-t-2 transition duration-500 ease-in-out border-gray-300;
+}
+
+.wizard-group.completed .wizard-icon,
+.wizard-trail.completed {
+	@apply border-teal;
+}
+
+.wizard-group.completed .wizard-text,
+.wizard-row .wizard-group.completed {
+	@apply text-teal;
+}
+
+.wizard-group.active .wizard-icon,
+.wizard-group.active .wizard-text,
+.wizard-trail.active {
+	@apply border-teal text-teal;
+}
+
+.wizard-group.active .wizard-icon,
+.wizard-trail.active {
+	@apply bg-teal text-white;
+}

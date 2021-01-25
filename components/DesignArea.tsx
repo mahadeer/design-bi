@@ -4,6 +4,7 @@ import { getDesignAreaActions } from '../store/models';
 import { IRootState } from '../store/reducers';
 import FilterBar from './Panels/FilterBar';
 import TabBar from './Panels/TabBar';
+import ReportArea from './ReportArea';
 
 function DesignArea(
   props: ReturnType<typeof mapStateToProps> &
@@ -18,7 +19,7 @@ function DesignArea(
     >
       <div className="filter-area bg-white border-r border-gray-400" />
       <FilterBar onToggleFilterArea={toggleFilterArea} />
-      <div className="report-area mx-5 my-10 bg-white" />
+      <ReportArea />
       <div className="settings-area bg-white border-l border-gray-400" />
       <TabBar />
     </div>
