@@ -1,7 +1,7 @@
 import React from 'react';
 import GridLayout from 'react-grid-layout';
 
-export default class extends React.Component {
+export default class extends React.Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {
